@@ -9,11 +9,11 @@ set cpo&vim
 
 call nim#init()
 
-setlocal formatoptions-=t formatoptions+=croql
+setlocal formatoptions-=l formatoptions+=croqt
 setlocal comments=:##,:#
 setlocal commentstring=#\ %s
 setlocal omnifunc=NimComplete
-setlocal suffixesadd=.nim 
+setlocal suffixesadd=.nim
 setlocal expandtab  "Make sure that only spaces are used
 setlocal foldmethod=indent
 setlocal foldlevel=99 " Don't fold newly opened buffers by default
@@ -26,4 +26,3 @@ compiler nim
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
-
